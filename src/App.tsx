@@ -99,7 +99,7 @@ export default function App() {
         return true;
       }
       return false;
-    } catch (e) {
+    } catch {
       return false;
     }
   };

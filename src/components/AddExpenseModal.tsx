@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import type { Group, Expense, Member, ExpenseCategory, Split } from '../types';
+import type { Group, Expense, ExpenseCategory, Split } from '../types';
 import {
   X,
   Utensils,
@@ -38,8 +38,6 @@ export default function AddExpenseModal({
   group,
   expenseToEdit
 }: AddExpenseModalProps) {
-  if (!isOpen) return null;
-
   const [title, setTitle] = useState('');
   const [amountStr, setAmountStr] = useState('');
   const [paidById, setPaidById] = useState('');
@@ -138,6 +136,8 @@ export default function AddExpenseModal({
     }
     setError(null);
   }, [expenseToEdit, group, isOpen]);
+
+  if (!isOpen) return null;
 
   const totalAmount = parseFloat(amountStr) || 0;
 

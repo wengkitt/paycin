@@ -11,8 +11,6 @@ import {
   Coins,
   Smile,
   Info,
-  Calendar,
-  Share2,
   ListRestart
 } from 'lucide-react';
 
@@ -58,7 +56,7 @@ export default function GroupList({
         } else {
           setImportError('Invalid backup file structure.');
         }
-      } catch (err) {
+      } catch {
         setImportError('Could not parse JSON. Make sure it is a valid file.');
       }
     };

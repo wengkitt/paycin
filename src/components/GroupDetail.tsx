@@ -1,23 +1,18 @@
 import React, { useState, useMemo } from 'react';
-import type { Group, Expense, Debt, MemberBalance, ExpenseCategory } from '../types';
+import type { Group, Expense, Debt, ExpenseCategory } from '../types';
 import { motion, AnimatePresence } from 'motion/react';
 import {
   ArrowLeft,
   Plus,
   Trash2,
   Edit,
-  DollarSign,
   ArrowRight,
-  TrendingDown,
   TrendingUp,
-  User,
   Search,
-  Filter,
   CheckCircle2,
   Calendar,
   Sparkles,
   Info,
-  ChevronRight,
   RefreshCw,
   Share2
 } from 'lucide-react';
