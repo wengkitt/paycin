@@ -6,7 +6,7 @@
 	"$schema": "node_modules/wrangler/config-schema.json",
 	"name": "paycin",
 	"main": "worker/index.ts",
-	"compatibility_date": "2026-07-10",
+	"compatibility_date": "2026-07-09",
 	"assets": {
 		"not_found_handling": "single-page-application"
 	},
